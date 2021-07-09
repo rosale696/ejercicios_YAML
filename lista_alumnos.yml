@@ -11,3 +11,11 @@ alumnos:
     matricula: 12345677
     nombre: Miguel
     edad: 33
+-   item_id: 4
+    matricula: 12345789
+    nombre: pedro
+    edad: 23
+-   item_id: 5
+    matricula: 12345897
+    nombre: roberto
+    edad: 24
