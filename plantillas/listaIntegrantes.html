@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>integrantes</title>
+        <link href="{{ url_for('mirecurso', path='/bootstrap.min.css') }}" rel="stylesheet">
+        <script src="{{ url_for('mirecurso', path='/bootstrap.bundle.min.js') }}"></script>
+    </head>
+    <body>
+        <div ><h1 style="text-align: center;">Lista de integrantes</h1></div>
+        <div>
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">item_id</th>
+                    <th scope="col">Matricula</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Edad</th>
+                </tr>
+                </thead>
+                <tbody>
+                    {% for fila in lista %}
+                        <tr scope="row">
+                            {% for campo in fila %}
+                            <td>{{ fila[campo] }}</td>
+                            {% endfor %}
+                            <!-- <td><a href="/eliminar/{{fila.get('item_id')}}"><button class="btn btn-danger">Eliminar</button></a></td> -->
+                            <td><a href="/eliminar/{{lista.index(fila)}}"><button class="btn btn-danger">Eliminar</button></a></td>
+                        </tr>
+                    {% endfor %}
+                    <tr scope="row">
+                        <form method="POST" action="/agregar">
+                        <td> </td>
+                        <td><input type="number" name="f_matricula" class="form-control" required></td>
+                        <td><input type="text" name="f_nombre" class="form-control" required></td>
+                        <td><input type="number" name="f_edad" class="form-control" required></td>
+                        <td style="text-align: center;"><button class="btn btn-primary" type="submit">Agregar</button></td>
+                        </form>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

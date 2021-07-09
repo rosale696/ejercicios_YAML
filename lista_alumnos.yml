@@ -1,0 +1,13 @@
+alumnos:
+-   item_id: 1
+    matricula: 918765432
+    nombre: Juan
+    edad: 33
+-   item_id: 2
+    matricula: 12345678
+    nombre: wilber
+    edad: 24
+-   item_id: 3
+    matricula: 12345677
+    nombre: Miguel
+    edad: 33

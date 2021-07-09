@@ -1,0 +1,27 @@
+#titulos {
+font-family: "Comic Sans MS", cursive, sans-serif;
+font-size: 30px;
+letter-spacing: 0px;
+word-spacing: 2px;
+color: #2103FF;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}
+
+#parrafos {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 20px;
+letter-spacing: 0px;
+word-spacing: 2px;
+color: #2DB714;
+font-weight: 400;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+
+}
+
